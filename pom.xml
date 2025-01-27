@@ -16,45 +16,36 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
-	<dependencies>
-	<dependency>
+	
+    <dependencies>
+    <!-- Spring Boot Starter Data JPA -->
+    <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-jpa</artifactId>
         <version>3.2.5</version>
     </dependency>
+
+    <!-- Spring Boot Starter Web -->
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
         <version>3.2.5</version>
     </dependency>
+
+    <!-- Spring Kafka -->
     <dependency>
         <groupId>org.springframework.kafka</groupId>
         <artifactId>spring-kafka</artifactId>
         <version>3.1.4</version>
     </dependency>
+
+    <!-- H2 Database -->
     <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
         <version>2.2.224</version>
     </dependency>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <version>3.2.5</version>
-        <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>org.springframework.kafka</groupId>
-        <artifactId>spring-kafka-test</artifactId>
-        <version>3.1.4</version>
-        <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>kafka</artifactId>
-        <version>1.19.1</version>
-    </dependency>
-	<dependencies>
+
     <!-- Spring Boot Starter Test for testing support -->
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -67,58 +58,22 @@
     <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>1.7.36</version> <!-- Adjust version as needed -->
+        <version>1.7.36</version>
     </dependency>
 
-    <!-- Spring Boot Starter Web for web applications -->
+    <!-- Spoon Javadoc -->
     <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-        <version>3.2.5</version>
+        <groupId>fr.inria.gforge.spoon</groupId>
+        <artifactId>spoon-javadoc</artifactId>
+        <version>11.2.1-beta-1</version>
     </dependency>
 
-    <!-- H2 Database for in-memory database support -->
-    <dependency>
-        <groupId>com.h2database</groupId>
-        <artifactId>h2</artifactId>
-        <version>2.2.224</version>
-        <scope>runtime</scope>
-    </dependency>
-
-    <!-- Spring Kafka for Kafka messaging support -->
-    <dependency>
-        <groupId>org.springframework.kafka</groupId>
-        <artifactId>spring-kafka</artifactId>
-        <version>3.1.4</version>
-    </dependency>
-
-    <!-- Spring Kafka Test for testing Kafka components -->
-    <dependency>
-        <groupId>org.springframework.kafka</groupId>
-        <artifactId>spring-kafka-test</artifactId>
-        <version>3.1.4</version>
-        <scope>test</scope>
-    </dependency>
-
-    <!-- Testcontainers for integration testing with Kafka -->
-    <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>kafka</artifactId>
-        <version>1.19.1</version>
-        <scope>test</scope>
-    </dependency>
-	
-
+    <!-- Other dependencies as needed -->
+    
 </dependencies>
-<!-- https://mvnrepository.com/artifact/fr.inria.gforge.spoon/spoon-javadoc -->
-<dependency>
-    <groupId>fr.inria.gforge.spoon</groupId>
-    <artifactId>spoon-javadoc</artifactId>
-    <version>11.2.1-beta-1</version>
-</dependency>
 
 
-</dependencies>
+
 
 	<build>
 		<plugins>
